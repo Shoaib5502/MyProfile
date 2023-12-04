@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55686e8ba7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="#header ">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#portfolio">My Works</a></li>
+                    <li><a href="#researches">My Researches</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Shoaib</span><br/>Shaik from India.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------About Me------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>about me should be written</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Full Stack Web Development</span><br>MERN Stack<br>Django Stack<br>Java Stack</li>
+                            <li><span>Web Development Frameworks</span><br>React.js (for MERN Stack)<br>Django (for Django Stack)<br>Java Spring (for Java Stack)</li>
+                            <li><span>Backend Technologies</span><br>Node.js (for MERN Stack)<br>Python (for Django Stack)<br>Java (for Java Stack)</li>
+                            <li><span>Database Management</span><br>MongoDB (for MERN Stack)<br>SQL (for Django and Java Stack)</li>
+                            <li><span>UI/UX Design</span><br>Figma</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Building Mobile apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>I successfully concluded my formal education at Ravindra Bharathi Public School with a GPA of "9.7" .</li>
+                            <li><span>2019-2021</span><br>I have achieved my intermediate education at Aakash Institute with 960 marks.</li>
+                            <li><span>2021-current</span><br>I am presently enrolled in a Bachelor of Technology (B.Tech) Honors program at KL University.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-sliders"></i>
+                    <h2>UI/UX Design and Development</h2>
+                    <p>
+                        Leveraging my expertise in Figma and a keen eye for user-centric design, I specialize in crafting visually appealing and intuitive user interfaces. From wireframing to full-scale design implementation, I ensure seamless user experiences.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Web Development</h2>
+                    <p>
+                        As a skilled full-stack developer, I proficiently work with MERN, Django, and Java stacks. My comprehensive approach involves creating dynamic and responsive websites, handling both front-end and back-end development to deliver robust and scalable solutions.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>
+                        With expertise in mobile app development, I create cross-platform and native applications. Using frameworks like React Native and native development for Android and iOS, I bring innovative and user-friendly mobile solutions to life.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------Certificates------------------- -->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="certificate-list">
+                <div class="certificate">
+                    <img src="images/certificate-1.png"/>
+                    <div class="layer">
+                        <h3>AWS Cloud practitioner</h3>
+                        <p>AWS Certified Cloud Practitioner: Demonstrating foundational proficiency in AWS cloud services, I leverage this certification to navigate and optimize cloud-based solutions.</p>
+                        <a href="https://www.credly.com/badges/85c49490-1a7b-4442-bd29-67a32021e5e9/public_url"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/certificate-2.png"/>
+                    <div class="layer">
+                        <h3>RedHat Enterprise</h3>
+                        <p>Red Hat Certified Enterprise Application Developer: With this certification, I showcase expertise in developing resilient and scalable applications on the Red Hat platform, contributing to effective enterprise-level solutions.</p>
+                        <a href="https://www.credly.com/badges/ca9aaa67-490f-41c6-b14a-5ef5a3db1fab/public_url"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/certificate-3.jpg"/>
+                    <div class="layer">
+                        <h3>Certification of Research</h3>
+                        <p>"Certificate of Recognition from IEEE for Outstanding Research Paper:"Cost optimizing cloud based docker application deployment with cloudfront and global accelerator in AWS cloud"</p>
+                        <a href="images/certified.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ---------------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png"/>
+                    <div class="layer">
+                        <h3>Travel Tourism Site</h3>
+                        <p>Crafted a comprehensive Travel, Tourism, and Hospitality web application seamlessly integrating a diverse range of features.</p>
+                        <a href="https://github.com/Shoaib5502/travel_tourism_hospitality.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png"/>
+                    <div class="layer">
+                        <h3>Astrology Site</h3>
+                        <p>Created an engaging astrology project using the MERN stack, seamlessly blending modern technology with ancient wisdom. </p>
+                        <a href="https://github.com/Shoaib5502/AstrologySystem.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png"/>
+                    <div class="layer">
+                        <h3>Blogging Site</h3>
+                        <p>Developed a dynamic blogging website using Java full-stack web development, offering a user-friendly platform for content creation and engagement</p>
+                        <a href="https://github.com/Shoaib5502/BloggingSystem.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- ------------------Research---------------- -->
+    <div id="researches">
+        <div class="container">
+            <h1 class="sub-title">My Research</h1>
+            <div class="research-list">
+                <div class="research">
+                    <img src="images/paper-1.png"/>
+                    <div class="layer">
+                        <h3>Cost-Optimizing Cloud-Based</h3>
+                        <p>Exploring Innovations in cost optimizing cloud based docker application deployment with cloudfront and global accelerator in Amazon Web Services</p>
+                        <a href="" download><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+
+
+<!-- -----------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> shoaib.shaik5502@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9346368435</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/shoaib.shaik.7946/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/shoaib-shaik-750698248/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shaik_.shoaib_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required />
+                    <input type="email" name="Email" placeholder="Your Email" required />
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Shoaib Shaik. Made with <i class="fa-solid fa-heart"></i> to display my works and achievements.</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzkwajyb0wnL-Rw_lNezjfjRBF3ZSEG2APVXEYUwIYbsdgmdoHSQQHDPVqEQWqnbFHifA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const  msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
